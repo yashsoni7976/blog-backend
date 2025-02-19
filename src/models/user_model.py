@@ -13,4 +13,5 @@ class UserModel(Base):
     is_active = Column(Boolean, nullable=False, default=True)
     created_at = Column(TIMESTAMP(timezone=True), server_default=func.timezone("Asia/Calcutta", func.now()))
 
+    blogs = relationship("BlogModel", back_populates="user", cascade="all, delete-orphan")
     auth = relationship("AuthModel", back_populates="user", uselist=False)
