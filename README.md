@@ -20,7 +20,6 @@ This project provides an API for managing users and blog posts. The core functio
 
 - **User Authentication**: Users can register, log in, and access protected resources using JWT tokens.
 - **User Management**: Admin can perform CRUD operations on user data.
-- **Role-Based Access**: Different roles can access different parts of the application.
 
 ## Technologies Used
 
@@ -28,10 +27,7 @@ This project provides an API for managing users and blog posts. The core functio
 - **FastAPI**: Fast API framework for building APIs
 - **SQLAlchemy**: ORM for database interaction
 - **JWT**: For user authentication using JSON Web Tokens
-- **SQLite**: Database for development (you can easily swap it with PostgreSQL, MySQL, etc.)
+- **PostgresSQL**: Database for development (you can easily swap it with PostgreSQL, MySQL, etc.)
 - **Pydantic**: For request validation
 - **Alembic**: For database migrations
-- **pytest**: For testing
-- **Pylint/Flake8**: For code linting and style checks
-- **Black**: Code formatting
-- **isort**: For organizing imports
+- **Pylint**: For code linting and style checks
